@@ -2,6 +2,10 @@ import { buildCollection } from "@firecms/core";
 
 export const abayaCollection = buildCollection({
   id: "products",
+  customId: {
+  label: "ID du produit",
+  description: "Ex: abaya-noire-classic (minuscules, tirets uniquement)",
+},
   path: "products",
   name: "Produits",
   singularName: "Produit",
